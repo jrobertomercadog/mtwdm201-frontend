@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# This macOS thingamagick ..
+.DS_Store
+
+# VSCode stuff
+.vs/

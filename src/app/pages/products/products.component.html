@@ -1,0 +1,14 @@
+
+<div class="text-center">
+  
+  <div class="btn-group"  role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Cars']" routerLinkActive="active" >Cars</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Motorcycles']" routerLinkActive="active">Motorbikes</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Buses']" routerLinkActive="active">Buses</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Ships']" routerLinkActive="active">Seafare</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Planes']" routerLinkActive="active">Aeroplanes</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories', 'Trains']" routerLinkActive="active">Locomotive</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

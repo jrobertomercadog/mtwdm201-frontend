@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/kittentwo.png" width="35" height="35" alt="KittenTwo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" >
+          <a class="nav-link" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" >
+          <a class="nav-link" [routerLink]="['/products']">Products <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" >
+          <a class="nav-link" [routerLink]="['/about']">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-secondary my-2 my-sm-0" type="button" (click)="logout()">Get Out!</button>
+        </li>        
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search .." aria-label="Search" #txtSearch (keyup.enter)="search(txtSearch.value)">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="button" (click)="search(txtSearch.value)">Go Fetch</button>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#"><i class="fa {{breadcrumb.icon}}"></i> {{breadcrumb.title}}</a></li>
+      <!--<li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>-->
+    </ol>
+  </nav>
